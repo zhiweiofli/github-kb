@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.local
+.claude/settings.local.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Cloned Repositories (GitHub Knowledge Base)
+repos/
+
+# IDE
+.idea/
+.vscode/
