@@ -63,6 +63,13 @@
 - Notes: Universal skills loader for AI coding agents。
 - 最后讨论时间：2026年2月7日
 
+### [qmd](./repos/qmd)
+- Category: agent-framework / local-search
+- Status: LATER
+- Why: 把 markdown 记忆与知识库做成本地混合检索（BM25+向量+rerank），支持 agent 化工作流。
+- Notes: CLI + 可选 MCP server；支持 collection/context/embed/hybrid query。
+- 最后讨论时间：2026年2月7日
+
 ### [vibe](./repos/vibe)
 - Category: sandboxing / agent-security
 - Status: LATER
