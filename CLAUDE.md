@@ -23,7 +23,7 @@
 工作**未完成**直到产出验证证据：
 - 搜索结果经过筛选确认 ✓
 - 仓库成功克隆并可访问 ✓
-- Catalog 条目链接有效 ✓
+- 索引条目链接有效 ✓
 
 ### 零幻觉协议 (Zero Hallucination)
 
@@ -40,7 +40,9 @@
 
 ```yaml
 kb_root: ./github-kb/repos/
-catalog_file: CLAUDE.md
+index_file: INDEX.md
+focus_file: FOCUS.md
+memory_file: MEMORY.md
 ```
 
 ---
@@ -51,11 +53,11 @@ catalog_file: CLAUDE.md
 |------|------|
 | `/search-github <query>` | 搜索 GitHub 仓库、Issues、PRs |
 | `/clone-repo <owner/repo>` | 克隆仓库到本地知识库 |
-| `/update-catalog [repo]` | 更新 Catalog 索引 |
+| `/update-index [repo]` | 更新 INDEX.md（repo 索引） |
 
 ---
 
-## Workflow: Discover → Acquire → Retrieve → Catalog
+## Workflow: Discover → Acquire → Retrieve → Index
 
 ### 1. DISCOVER (远程搜索)
 
@@ -77,22 +79,33 @@ git clone https://github.com/<owner>/<name>.git ./github-kb/repos/<name>
 - `Glob` - 发现目录结构
 - `Grep` - 搜索 API、配置、关键词
 
-### 4. CATALOG (索引维护)
+### 4. INDEX (索引维护)
 
-更新本文件，添加新条目：
+#### Repo 索引（结构化条目）
+更新 [`INDEX.md`](./INDEX.md)，条目模板：
 
 ```markdown
 ### [project-name](./repos/project-name)
-一句话描述。
+- Category: <category>
+- Status: LATER
+- Why: <why-you-care>
+- Notes: <one-or-two-notes>
+- 最后讨论时间：YYYY年M月D日
 ```
+
+#### 短期关注（以主题为中心）
+更新 [`FOCUS.md`](./FOCUS.md) 的 NOW/NEXT 与两个主题的下一步。
+
+#### 长期记忆（结论沉淀）
+更新 [`MEMORY.md`](./MEMORY.md) 的 takeaways / patterns / gotchas / decisions。
 
 ---
 
-## Catalog
+## Index Entry Points
 
-> 以下是已克隆到本地的 GitHub 项目索引。
-
-<!-- 新项目条目添加在此处 -->
+- 结构化 repo 索引：[`INDEX.md`](./INDEX.md)
+- 短期主题看板：[`FOCUS.md`](./FOCUS.md)
+- 长期结论沉淀：[`MEMORY.md`](./MEMORY.md)
 
 ---
 
