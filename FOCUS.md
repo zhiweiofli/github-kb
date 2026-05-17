@@ -4,10 +4,10 @@
 > 约定：当你准备启动某个 repo 的实际验证/使用时，把它从 LATER 提到 NOW/NEXT，并写清楚可执行的下一步。
 
 ## NOW（本周主攻）
-- （空）
+- **知识库基础设施补全**：修复 frontmatter 合规性、INDEX/MEMORY 空壳主题、Concept 交叉链接。验证管线从 Raw → Concept 的完整性。
 
 ## NEXT（接下来两周）
-- （空）
+- 对 serena / superpowers 做端到端实测，产出 agent-framework 对比结论（见 THEMES #1）。
 
 ## THEMES（主题池 / 2-4 周）
 
