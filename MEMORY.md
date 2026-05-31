@@ -175,3 +175,52 @@
 - **feeder-to-concept**：GitHub 项目不直接进入概念层，而是先在 `github-kb` 聚类成能力模式，再由 `wiki-extract-concept` 提炼 evergreen cards。[已内化]
 - **verification-before-action**：凡涉及 Agent 执行、浏览器控制、代码运行、金融工具的项目，先记录边界与适用条件，再决定是否进入工具链。[已内化]
 - **repo-as-signal**：星标/截图不是结论，只是信号；真正要沉淀的是工具背后的能力缺口、架构模式和可复用 SOP。[已内化]
+
+---
+
+## 主题 12：agent-communication / IM bridge
+
+### Key takeaways
+- [cc-connect](https://github.com/chenhg5/cc-connect) 是 Claude Code 与外部消息入口/IM 桥接方向的项目线索，目前仅完成 GitHub 截图 feeder 入库，尚未克隆和深度阅读 README。[已内化]
+
+### Reusable patterns
+- **IM/移动端作为 Agent 控制面**：将 Claude Code 这类本地/终端型 Agent 接到微信、Telegram、飞书等消息入口，可以把长任务调度、状态回报、远程确认从 IDE/终端迁移到随身通信工具。[已内化]
+
+---
+
+## 主题 13：2026-05-31 批量导入
+
+### Key takeaways
+
+**Agent OS / Spec-first 范式**
+- [ouroboros](https://github.com/Q00/ouroboros)（4.4K★）提出"Stop prompting. Start specifying."，以 MCP 为工具总线打造 Agent OS，代表从"提示词工程"向"规范驱动"的范式迁移。与 superpowers 的 Spec-first 理念高度对应，是该方向的最新旗帜。[待内化]
+
+**深度研究 Agent**
+- [MiroThinker](https://github.com/MiroMindAI/MiroThinker)（8.2K★）在 BrowseComp 上达到 74.0 SOTA，展示了 web 搜索增强 + 推理循环的深度研究 Agent 最高水位线。Python 实现，可作为自建 research agent 的精度基准与架构参照。[待内化]
+
+**GUI Agent / 端侧自动化**
+- [gelab-zero](https://github.com/stepfun-ai/gelab-zero)（2.2K★，阶跃星辰）和 [Mano-P](https://github.com/Mininglamp-AI/Mano-P)（2.2K★，明澜 AI）同时入库，共同指向"本地 GUI Agent"的产业化加速：Mano-P 在 OSWorld 专项榜 #1（58.2%），纯视觉驱动，可在 Apple M4 Mac 本地推理，数据不出设备；gelab-zero 侧重 phone use agent。两者之差：一个主桌面（macOS），一个主移动端。[待内化]
+- [mano-afk](https://github.com/Mininglamp-AI/mano-afk)（10★，早期）是 Mano-P 的上层应用：自然语言 → 全自主全栈 App 构建（设计→开发→GUI测试→对抗 code review→修复→部署）。多 Agent + adversary review 的"AFK 自治开发"范式值得持续追踪。[待内化]
+
+**AI 记忆系统**
+- [mempalace](https://github.com/MemPalace/mempalace)（53K★）是当前基准测试最高的开源 AI 记忆系统，ChromaDB + MCP，免费。与本 PKM 的 MEMORY.md 持久记忆机制高度呼应——mempalace 可以作为将 wiki/2_Concepts/ 向量化、支持语义检索的记忆底座候选。[待内化]
+
+**金融场景 Agent Skills**
+- [anthropics/financial-services](https://github.com/anthropics/financial-services)（28.9K★）是 Anthropic 官方金融服务示例仓库，规模异常大，研究价值极高，需补充读 README。[待内化]
+- [daisy-financial-research](https://github.com/Agents365-ai/daisy-financial-research)（21★）是专为 AI Agent 设计的股票研究 Skill，覆盖 A 股/港股/美股，Plan → fetch → validate → report 四段式流程，可直接接入本 PKM 的「投资理财」维度知识采集管线。[待内化]
+
+**内容生产管线扩展**
+- [remotion](https://github.com/remotion-dev/remotion)（48.5K★）用 React + 代码驱动视频渲染，与 LLM 脚本生成 + 自动化发布流的结合潜力巨大，是内容资产管线从"文字/语音"延伸到"视频"的工业级方案。[待内化]
+
+**开发工具**
+- [hunk](https://github.com/modem-dev/hunk)（4.5K★）：review-first 终端 diff 查看器，可补齐 Agent 提交前 code review 的可视化环节。[待内化]
+- [supercheck](https://github.com/supercheck-io/supercheck)（203★）：测试 + 监控 + 可靠性 as Code，Playwright + k6，Agent 工作流持续验证层候选。[待内化]
+- [claude-container](https://github.com/nezhar/claude-container)（164★）：Claude Code Docker 预装容器，研究最小容器化配置的参照（已迁移至 VibePod）。[待内化]
+
+**Generative UI 资源**
+- [awesome-generative-ui](https://github.com/narrowin/awesome-generative-ui)（38★）：LLM 动态生成/组合 UI 的资源精选列表，关注 Generative UI 趋势的信号源。[待内化]
+
+### Reusable patterns
+- **记忆系统选型决策树**：mempalace（外部向量化记忆，MCP 接口）vs gbrain（嵌入式 PGLite，零依赖）vs MEMORY.md（当前方案，纯 Markdown 追加）。三者分别对应「大规模语义检索」「轻量本地持久化」「可读性优先」场景，可按需分层叠加。[待内化]
+- **GUI Agent 评估框架**：OSWorld 作为桌面 GUI Agent 标准基准，BrowseComp 作为 web 搜索研究 Agent 基准——收录新 GUI/Research Agent 时，优先看这两个数字而非星标。[待内化]
+- **Spec-first Agent OS 架构**：ouroboros 的设计哲学——不写 prompt，写 spec；Agent 根据 spec 生成执行计划，MCP 作为工具注入层。与本项目 CLAUDE.md 的 Skill 状态机有概念共鸣。[待内化]

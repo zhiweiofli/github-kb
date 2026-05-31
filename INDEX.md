@@ -840,3 +840,133 @@
 - Why: 一个用于处理大型图数据并支持 HTML 可视化与多语言扩展的开源项目。
 - Notes: 来源: GitHub 截屏 feeder（原 source-card 目录已按规则删除）；URL: https://github.com/safishamsi/graphify
 - 最后讨论时间：2026年5月17日
+
+### [chenhg5-cc-connect](https://github.com/chenhg5/cc-connect)
+- GitHub: https://github.com/chenhg5/cc-connect
+- Local: not cloned
+- Category: agent-communication / claude-code-bridge
+- Status: LATER
+- Why: cc-connect 是 Claude Code 与 IM/外部消息系统的桥接工具线索，适合纳入 Agent 远程协作、移动端遥控和消息入口体系候选池。
+- Notes: 来源: GitHub 截屏 feeder；canonical URL 已从截图笔记识别；后续由 github-kb-indexer/调研补齐 README、功能边界、安装方式和适配渠道。
+- 最后讨论时间：2026年5月30日
+
+---
+
+## 2026-05-31 批量导入
+
+### [hunk](https://github.com/modem-dev/hunk)
+- GitHub: https://github.com/modem-dev/hunk
+- Local: not cloned
+- Category: dev-tools / code-review-tui
+- Status: LATER
+- Why: 专为 agentic coder 设计的终端 diff 查看器，"review-first" 理念与 Agent 工作流深度契合，可补齐 Agent 提交前 diff 审查环节。
+- Notes: TypeScript；CLI + TUI；4.5K★；Git diff 可视化 + code review 体验。
+- 最后讨论时间：2026年5月31日
+
+### [awesome-generative-ui](https://github.com/narrowin/awesome-generative-ui)
+- GitHub: https://github.com/narrowin/awesome-generative-ui
+- Local: not cloned
+- Category: design-resources / generative-ui
+- Status: LATER
+- Why: LLM 动态生成/组合/渲染 UI 组件的资源精选列表，研究 Generative UI 趋势的一手信号源。
+- Notes: 38★；无主编程语言（纯文档）；覆盖前端+生成式 AI+UI 设计实验。
+- 最后讨论时间：2026年5月31日
+
+### [gelab-zero](https://github.com/stepfun-ai/gelab-zero)
+- GitHub: https://github.com/stepfun-ai/gelab-zero
+- Local: not cloned
+- Category: device-agent / gui-agent
+- Status: LATER
+- Why: 阶跃星辰 GELab 出品的 GUI Agent 旗舰方案（2.2K★），定位"银河系最强 GUI Agent"，支持 phone use agent，是端侧 GUI 自动化的产业级参照。
+- Notes: Python；包含 PUA（Phone Use Agent）能力；2.2K★。
+- 最后讨论时间：2026年5月31日
+
+### [MiroThinker](https://github.com/MiroMindAI/MiroThinker)
+- GitHub: https://github.com/MiroMindAI/MiroThinker
+- Local: not cloned
+- Category: agent-framework / deep-research
+- Status: LATER
+- Why: 深度研究 Agent，在 BrowseComp/BrowseComp-Zh 上达到 74.0/75.3 SOTA（8.2K★），是 web 搜索增强研究 Agent 的顶级开源参照。
+- Notes: Python；支持 GAIA / HLE / xBench 多项评测；MiroThinker-1.7 最新模型；topics 包含 browsecomp、deep-research、search-agent。
+- 最后讨论时间：2026年5月31日
+
+### [supercheck](https://github.com/supercheck-io/supercheck)
+- GitHub: https://github.com/supercheck-io/supercheck
+- Local: not cloned
+- Category: dev-tools / testing-monitoring
+- Status: LATER
+- Why: 开源测试 + 监控 + 可靠性平台（"as Code"），可作为 Agent 工作流持续验证层的候选基础设施。
+- Notes: TypeScript；Playwright + k6 + HTTP 监控 + Status Page；203★；CI/CD 集成。
+- 最后讨论时间：2026年5月31日
+
+### [claude-container](https://github.com/nezhar/claude-container)
+- GitHub: https://github.com/nezhar/claude-container
+- Local: not cloned
+- Category: agent-harness / containerization
+- Status: LATER
+- Why: 预装 Claude Code 的 Docker 容器，降低 Claude Code 沙箱化部署门槛，可参考其容器配置方案。
+- Notes: Shell；164★；开发已迁移至 VibePod；适合研究 Claude Code 容器化最小配置。
+- 最后讨论时间：2026年5月31日
+
+### [ouroboros](https://github.com/Q00/ouroboros)
+- GitHub: https://github.com/Q00/ouroboros
+- Local: not cloned
+- Category: agent-framework / agent-os
+- Status: LATER
+- Why: "Agent OS: Stop prompting. Start specifying."——定位从提示词转向规范驱动的 Agent 操作系统，4.4K★，是 Spec-first Agent 范式的代表项目。
+- Notes: Python；MCP 支持；topics 包含 agent-os、ai-agent、mcp；4.4K★。
+- 最后讨论时间：2026年5月31日
+
+### [remotion](https://github.com/remotion-dev/remotion)
+- GitHub: https://github.com/remotion-dev/remotion
+- Local: not cloned
+- Category: content-pipeline / programmatic-video
+- Status: LATER
+- Why: 用 React + 代码驱动视频生成（48.5K★），是 AI 内容资产管线中"程序化视频渲染"环节的工业级方案，可与 LLM 生成脚本协同。
+- Notes: TypeScript；React 驱动；48.5K★；支持云端渲染；与 AI 脚本生成 + 自动化发布流结合潜力大。
+- 最后讨论时间：2026年5月31日
+
+### [Mano-P](https://github.com/Mininglamp-AI/Mano-P)
+- GitHub: https://github.com/Mininglamp-AI/Mano-P
+- Local: not cloned
+- Category: device-agent / gui-vla
+- Status: LATER
+- Why: OSWorld 专项榜 #1（58.2%）的开源 GUI-VLA Agent，可在 Apple M4 Mac 本地运行，纯视觉驱动桌面自动化，数据完全不出设备（2.2K★）。
+- Notes: 无主语言（多模态模型驱动）；支持 Mac mini/MacBook 本地推理；topics 包含 computer-use-agents、gui-automation、on-device-ai、osworld。
+- 最后讨论时间：2026年5月31日
+
+### [mano-afk](https://github.com/Mininglamp-AI/mano-afk)
+- GitHub: https://github.com/Mininglamp-AI/mano-afk
+- Local: not cloned
+- Category: agent-framework / autonomous-builder
+- Status: LATER
+- Why: 全自主全栈应用构建 Agent：自然语言 → 开发 → 测试（GUI 测试 by mano-cua）→ bug 修复 → 部署，多 Agent 架构 + 对抗 code review，关注"AFK 自治开发"范式。
+- Notes: Python；10★（早期项目）；含 adversary code review 机制；每个项目后会进化。
+- 最后讨论时间：2026年5月31日
+
+### [mempalace](https://github.com/MemPalace/mempalace)
+- GitHub: https://github.com/MemPalace/mempalace
+- Local: not cloned
+- Category: agent-framework / memory-system
+- Status: LATER
+- Why: 基准测试排名最高的开源 AI 记忆系统（53K★），免费，MCP 支持，ChromaDB 向量存储，是 Agent 持久化记忆模块的顶级候选。
+- Notes: Python；ChromaDB + MCP；53K★；与本 PKM 的 MEMORY.md 机制高度相关。
+- 最后讨论时间：2026年5月31日
+
+### [financial-services](https://github.com/anthropics/financial-services)
+- GitHub: https://github.com/anthropics/financial-services
+- Local: not cloned
+- Category: finance-tools / anthropic-official
+- Status: LATER
+- Why: Anthropic 官方金融服务示例仓库（28.9K★），研究 Claude 在金融场景应用的官方参考实现。
+- Notes: Python；28.9K★；无公开 description，需读 README 补充细节。
+- 最后讨论时间：2026年5月31日
+
+### [daisy-financial-research](https://github.com/Agents365-ai/daisy-financial-research)
+- GitHub: https://github.com/Agents365-ai/daisy-financial-research
+- Local: not cloned
+- Category: finance-tools / research-skill
+- Status: LATER
+- Why: 面向 AI Agent 的股票研究 Skill（A 股/港股/美股），Plan → fetch → validate → report 四段式流程，是「Agent Skills 直接服务投资研究」的可复用参照。
+- Notes: Python；21★；daisy-skill 标准；支持三市场；含验证和报告生成环节。
+- 最后讨论时间：2026年5月31日
