@@ -39,7 +39,8 @@ def validate(data):
         if key == 'summary':
             valid = isinstance(value, str) and bool(value.strip())
         else:
-            valid = isinstance(value, list) and 1 <= len(value) <= 10 and all(isinstance(x, str) and x.strip() for x in value)
+            min_items = 0 if key == 'topics' else 1
+            valid = isinstance(value, list) and min_items <= len(value) <= 10 and all(isinstance(x, str) and x.strip() for x in value)
         if not valid:
             raise ValueError('Invalid model field: ' + key)
     return data

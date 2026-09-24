@@ -32,6 +32,12 @@ class CatalogueTests(unittest.TestCase):
             w.write_card(*args)
             self.assertEqual(card.read_text(), original)
 
+    def test_topics_may_be_empty_when_evidence_has_no_keywords(self):
+        data = dict(summary='摘要', use_cases=['需验证'], strengths=['未知'], limitations=['UNKNOWN'], when_to_revisit=['出现需求'])
+        self.assertEqual(w.validate({**data, 'topics': []})['topics'], [])
+        with self.assertRaises(ValueError):
+            w.validate({**data, 'topics': ['']})
+
     def test_deepseek_contract_and_invalid_result(self):
         data = dict(summary='摘要', **{k: ['测试'] for k in w.FIELDS if k != 'summary'})
         from io import BytesIO
