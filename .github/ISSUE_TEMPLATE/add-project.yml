@@ -1,0 +1,16 @@
+name: Add project
+description: 使用 DeepSeek 初评一个公开 GitHub 项目，并加入选型目录
+title: '[Index] '
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: GitHub repository
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: textarea
+    id: interest
+    attributes:
+      label: Why I care
+      description: 可选。你为什么关注它，未来可能用于什么场景？此内容会发送给 DeepSeek。

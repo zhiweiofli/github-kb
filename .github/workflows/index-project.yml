@@ -1,0 +1,61 @@
+name: Index project with DeepSeek
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Issue number to process or retry
+        required: true
+        type: number
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: index-project-${{ github.event.issue.number || inputs.issue_number }}
+  cancel-in-progress: false
+jobs:
+  index:
+    if: >-
+      github.actor == github.repository_owner &&
+      (github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, '[Index]'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Analyze and render
+        id: analyze
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-v4-flash' }}
+        run: python scripts/index_project.py
+      - name: Publish catalogue
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- projects/
+          if ! git diff --cached --quiet; then
+            git commit -m "Index project from issue #${ISSUE_NUMBER}"
+            git push origin "HEAD:${DEFAULT_BRANCH}"
+          fi
+      - name: Receipt after successful publication
+        env:
+          CARD: ${{ steps.analyze.outputs.card }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          gh issue close "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --comment "项目已索引（初评，未试用）：https://github.com/${GITHUB_REPOSITORY}/blob/${DEFAULT_BRANCH}/${CARD}"
+      - name: Failure receipt
+        if: failure()
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "索引未完成，Issue 保持开放。查看运行记录后使用 Run workflow 输入此 Issue 编号重试：https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
