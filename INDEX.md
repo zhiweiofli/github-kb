@@ -970,3 +970,97 @@
 - Why: 面向 AI Agent 的股票研究 Skill（A 股/港股/美股），Plan → fetch → validate → report 四段式流程，是「Agent Skills 直接服务投资研究」的可复用参照。
 - Notes: Python；21★；daisy-skill 标准；支持三市场；含验证和报告生成环节。
 - 最后讨论时间：2026年5月31日
+
+---
+
+## 2026-07-01 批量导入
+
+### [12-factor-agents](https://github.com/humanlayer/12-factor-agents)
+- GitHub: https://github.com/humanlayer/12-factor-agents
+- Local: not cloned
+- Category: agent-framework / design-principles
+- Status: LATER
+- Why: 构建生产级 LLM-powered 软件的 12 条原则，是 Agent 工程化的设计准则参考。与 SuperClaude、superpowers 的 spec-first 理念互补——这里是原则层，那些是实现层。
+- Notes: TypeScript；23.9K★；覆盖 context-window、memory、orchestration、prompt-engineering、RAG 等核心维度。
+- 最后讨论时间：2026年7月1日
+
+### [MemPrivacy](https://github.com/MemTensor/MemPrivacy)
+- GitHub: https://github.com/MemTensor/MemPrivacy
+- Local: not cloned
+- Category: agent-framework / privacy-preserving-memory
+- Status: LATER
+- Why: 边缘-云端协同的隐私保护个性化记忆管理框架，解决 Agent 记忆系统的数据隐私问题。与 mempalace（向量记忆）、gbrain（嵌入式向量库）共同构成记忆方案矩阵。
+- Notes: Python；112★；支持 mem0/langmem 对比；Qwen3 隐私检测；边缘-云端架构。
+- 最后讨论时间：2026年7月1日
+
+### [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)
+- GitHub: https://github.com/harry0703/MoneyPrinterTurbo
+- Local: not cloned
+- Category: content-pipeline / media-generation
+- Status: LATER
+- Why: AI 一键生成高清短视频的工业级方案（94.8K★），是「文本 → 视频」内容资产化管线的顶级开源参照，与 remotion（程序化视频渲染）、Pixelle-Video（AI 短视频引擎）互补。
+- Notes: Python；94.8K★；MIT；MoviePy + ChatGPT；支持自动化短视频批量生产。
+- 最后讨论时间：2026年7月1日
+
+### [qiaomu-goal-meta-skill](https://github.com/joeseesun/qiaomu-goal-meta-skill)
+- GitHub: https://github.com/joeseesun/qiaomu-goal-meta-skill
+- Local: not cloned
+- Category: agent-skills / meta-skill-generator
+- Status: LATER
+- Why: 将模糊 Codex 任务转为强结构化 `/goal` 命令的 Meta-Skill——"让 Agent 更好地给 Agent 下达任务"。与 ouroboros 的 "Stop prompting. Start specifying." 理念高度共鸣。
+- Notes: Python；739★；MIT；含 outcome、verification、constraints、boundaries、iteration policy、completion evidence 六维规范。
+- 最后讨论时间：2026年7月1日
+
+### [paperclip](https://github.com/paperclipai/paperclip)
+- GitHub: https://github.com/paperclipai/paperclip
+- Local: not cloned
+- Category: agent-framework / agent-management-platform
+- Status: LATER
+- Why: 72.4K★ 的开源 Agent 管理应用——"The open-source app everyone uses to manage agents at work"。是研究「Agent 在工作中如何被组织、调度和治理」的一手产品样本。
+- Notes: TypeScript；72.4K★；MIT；https://paperclip.ing；13.5K  forks 说明生态活跃度极高。
+- 最后讨论时间：2026年7月1日
+
+### [RuView](https://github.com/ruvnet/RuView)
+- GitHub: https://github.com/ruvnet/RuView
+- Local: not cloned
+- Category: iot-hardware / spatial-intelligence
+- Status: LATER
+- Why: 将商用 WiFi 信号转为实时空间感知、生命体征监测和存在检测——无需任何视频像素。展示了"环境计算+AI"在隐私保护感知领域的极端创新，是 edge-AI 硬件信号。
+- Notes: Rust；76K★；MIT；ESP32 + React + TypeScript；Home Assistant 集成；WiFi sensing + pose estimation。
+- 最后讨论时间：2026年7月1日
+
+### [Better-Fullstack](https://github.com/Marve10s/Better-Fullstack)
+- GitHub: https://github.com/Marve10s/Better-Fullstack
+- Local: not cloned
+- Category: dev-tools / fullstack-scaffolding
+- Status: LATER
+- Why: 可视化全栈应用脚手架（TS/Rust/Python/Go/Java），选前端/后端/数据库/Auth/AI/Payments/DevOps 后一键生成。是 Agent 编程场景中"项目冷启动"的候选模板引擎。
+- Notes: TypeScript；677★；MIT；Next.js + Hono + FastAPI + Astro；含 shadcn-ui、Drizzle ORM、TanStack。
+- 最后讨论时间：2026年7月1日
+
+### [quant-mind](https://github.com/LLMQuant/quant-mind)
+- GitHub: https://github.com/LLMQuant/quant-mind
+- Local: not cloned
+- Category: finance-tools / quant-knowledge-extraction
+- Status: LATER
+- Why: 量化金融领域的智能知识提取与检索框架，将 LLM pipeline/workflow 范式应用于金融数据。与 daisy-financial-research（股票研究 Skill）互补——quant-mind 侧重知识库构建，daisy 侧重研究执行。
+- Notes: Python；1.6K★；MIT；含 workflow pipeline；http://llmquantdata.com/。
+- 最后讨论时间：2026年7月1日
+
+### [page-agent](https://github.com/alibaba/page-agent)
+- GitHub: https://github.com/alibaba/page-agent
+- Local: not cloned
+- Category: device-agent / browser-gui-agent
+- Status: LATER
+- Why: 阿里巴巴开源的 JavaScript 页内 GUI Agent（20.9K★）——自然语言控制 Web 界面，直接在页面中运行而非通过 CDP/外部驱动。与 gelab-zero（phone use）、Mano-P（桌面 GUI）构成端侧 GUI Agent 三极。
+- Notes: TypeScript；20.9K★；MIT；MCP 支持；browser-automation；https://alibaba.github.io/page-agent/。
+- 最后讨论时间：2026年7月1日
+
+### [stop-slop](https://github.com/hardikpandya/stop-slop)
+- GitHub: https://github.com/hardikpandya/stop-slop
+- Local: not cloned
+- Category: content-pipeline / ai-text-refinement
+- Status: LATER
+- Why: 专门去除 AI 写作痕迹的 Skill 文件（13.1K★）——"A skill file for removing AI tells from prose"。面向内容分发场景，是「AI 生成 → 人类化润色」链路的轻量工具，与 khazix-writer（风格化长文写作）互补。
+- Notes: 无主编程语言（纯 Skill 定义）；13.1K★；MIT；Skill 格式可复用于本项目的内容管线。
+- 最后讨论时间：2026年7月1日

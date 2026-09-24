@@ -193,24 +193,24 @@
 ### Key takeaways
 
 **Agent OS / Spec-first 范式**
-- [ouroboros](https://github.com/Q00/ouroboros)（4.4K★）提出"Stop prompting. Start specifying."，以 MCP 为工具总线打造 Agent OS，代表从"提示词工程"向"规范驱动"的范式迁移。与 superpowers 的 Spec-first 理念高度对应，是该方向的最新旗帜。[待内化]
+- [ouroboros](https://github.com/Q00/ouroboros)（4.4K★）提出"Stop prompting. Start specifying."，以 MCP 为工具总线打造 Agent OS，代表从"提示词工程"向"规范驱动"的范式迁移。与 superpowers 的 Spec-first 理念高度对应，是该方向的最新旗帜。[已内化]
 
 **深度研究 Agent**
 - [MiroThinker](https://github.com/MiroMindAI/MiroThinker)（8.2K★）在 BrowseComp 上达到 74.0 SOTA，展示了 web 搜索增强 + 推理循环的深度研究 Agent 最高水位线。Python 实现，可作为自建 research agent 的精度基准与架构参照。[待内化]
 
 **GUI Agent / 端侧自动化**
-- [gelab-zero](https://github.com/stepfun-ai/gelab-zero)（2.2K★，阶跃星辰）和 [Mano-P](https://github.com/Mininglamp-AI/Mano-P)（2.2K★，明澜 AI）同时入库，共同指向"本地 GUI Agent"的产业化加速：Mano-P 在 OSWorld 专项榜 #1（58.2%），纯视觉驱动，可在 Apple M4 Mac 本地推理，数据不出设备；gelab-zero 侧重 phone use agent。两者之差：一个主桌面（macOS），一个主移动端。[待内化]
-- [mano-afk](https://github.com/Mininglamp-AI/mano-afk)（10★，早期）是 Mano-P 的上层应用：自然语言 → 全自主全栈 App 构建（设计→开发→GUI测试→对抗 code review→修复→部署）。多 Agent + adversary review 的"AFK 自治开发"范式值得持续追踪。[待内化]
+- [gelab-zero](https://github.com/stepfun-ai/gelab-zero)（2.2K★，阶跃星辰）和 [Mano-P](https://github.com/Mininglamp-AI/Mano-P)（2.2K★，明澜 AI）同时入库，共同指向"本地 GUI Agent"的产业化加速：Mano-P 在 OSWorld 专项榜 #1（58.2%），纯视觉驱动，可在 Apple M4 Mac 本地推理，数据不出设备；gelab-zero 侧重 phone use agent。两者之差：一个主桌面（macOS），一个主移动端。[已内化]
+- [mano-afk](https://github.com/Mininglamp-AI/mano-afk)（10★，早期）是 Mano-P 的上层应用：自然语言 → 全自主全栈 App 构建（设计→开发→GUI测试→对抗 code review→修复→部署）。多 Agent + adversary review 的"AFK 自治开发"范式值得持续追踪。[已内化]
 
 **AI 记忆系统**
-- [mempalace](https://github.com/MemPalace/mempalace)（53K★）是当前基准测试最高的开源 AI 记忆系统，ChromaDB + MCP，免费。与本 PKM 的 MEMORY.md 持久记忆机制高度呼应——mempalace 可以作为将 wiki/2_Concepts/ 向量化、支持语义检索的记忆底座候选。[待内化]
+- [mempalace](https://github.com/MemPalace/mempalace)（53K★）是当前基准测试最高的开源 AI 记忆系统，ChromaDB + MCP，免费。与本 PKM 的 MEMORY.md 持久记忆机制高度呼应——mempalace 可以作为将 wiki/2_Concepts/ 向量化、支持语义检索的记忆底座候选。[已内化]
 
 **金融场景 Agent Skills**
-- [anthropics/financial-services](https://github.com/anthropics/financial-services)（28.9K★）是 Anthropic 官方金融服务示例仓库，规模异常大，研究价值极高，需补充读 README。[待内化]
-- [daisy-financial-research](https://github.com/Agents365-ai/daisy-financial-research)（21★）是专为 AI Agent 设计的股票研究 Skill，覆盖 A 股/港股/美股，Plan → fetch → validate → report 四段式流程，可直接接入本 PKM 的「投资理财」维度知识采集管线。[待内化]
+- [anthropics/financial-services](https://github.com/anthropics/financial-services)（28.9K★）是 Anthropic 官方金融服务示例仓库，规模异常大，研究价值极高，需补充读 README。[已内化]
+- [daisy-financial-research](https://github.com/Agents365-ai/daisy-financial-research)（21★）是专为 AI Agent 设计的股票研究 Skill，覆盖 A 股/港股/美股，Plan → fetch → validate → report 四段式流程，可直接接入本 PKM 的「投资理财」维度知识采集管线。[已内化]
 
 **内容生产管线扩展**
-- [remotion](https://github.com/remotion-dev/remotion)（48.5K★）用 React + 代码驱动视频渲染，与 LLM 脚本生成 + 自动化发布流的结合潜力巨大，是内容资产管线从"文字/语音"延伸到"视频"的工业级方案。[待内化]
+- [remotion](https://github.com/remotion-dev/remotion)（48.5K★）用 React + 代码驱动视频渲染，与 LLM 脚本生成 + 自动化发布流的结合潜力巨大，是内容资产管线从"文字/语音"延伸到"视频"的工业级方案。[已内化]
 
 **开发工具**
 - [hunk](https://github.com/modem-dev/hunk)（4.5K★）：review-first 终端 diff 查看器，可补齐 Agent 提交前 code review 的可视化环节。[待内化]
@@ -221,6 +221,42 @@
 - [awesome-generative-ui](https://github.com/narrowin/awesome-generative-ui)（38★）：LLM 动态生成/组合 UI 的资源精选列表，关注 Generative UI 趋势的信号源。[待内化]
 
 ### Reusable patterns
-- **记忆系统选型决策树**：mempalace（外部向量化记忆，MCP 接口）vs gbrain（嵌入式 PGLite，零依赖）vs MEMORY.md（当前方案，纯 Markdown 追加）。三者分别对应「大规模语义检索」「轻量本地持久化」「可读性优先」场景，可按需分层叠加。[待内化]
-- **GUI Agent 评估框架**：OSWorld 作为桌面 GUI Agent 标准基准，BrowseComp 作为 web 搜索研究 Agent 基准——收录新 GUI/Research Agent 时，优先看这两个数字而非星标。[待内化]
-- **Spec-first Agent OS 架构**：ouroboros 的设计哲学——不写 prompt，写 spec；Agent 根据 spec 生成执行计划，MCP 作为工具注入层。与本项目 CLAUDE.md 的 Skill 状态机有概念共鸣。[待内化]
+- **记忆系统选型决策树**：mempalace（外部向量化记忆，MCP 接口）vs gbrain（嵌入式 PGLite，零依赖）vs MEMORY.md（当前方案，纯 Markdown 追加）。三者分别对应「大规模语义检索」「轻量本地持久化」「可读性优先」场景，可按需分层叠加。[已内化]
+- **GUI Agent 评估框架**：OSWorld 作为桌面 GUI Agent 标准基准，BrowseComp 作为 web 搜索研究 Agent 基准——收录新 GUI/Research Agent 时，优先看这两个数字而非星标。[已内化]
+- **Spec-first Agent OS 架构**：ouroboros 的设计哲学——不写 prompt，写 spec；Agent 根据 spec 生成执行计划，MCP 作为工具注入层。与本项目 CLAUDE.md 的 Skill 状态机有概念共鸣。[已内化]
+
+---
+
+## 主题 14：2026-07-01 批量导入
+
+### Key takeaways
+
+**Agent 设计原则与治理**
+- [12-factor-agents](https://github.com/humanlayer/12-factor-agents)（23.9K★）提出了构建生产级 LLM 应用的 12 条原则，覆盖 context-window、memory、orchestration、prompt-engineering、RAG 等维度。与 ouroboros/superpowers 的 spec-first 理念形成互补——前者是原则层，后者是实现层。HumanLayer 是 Agent 工程化领域的重要声音。[已内化]
+- [paperclip](https://github.com/paperclipai/paperclip)（72.4K★）自称"The open-source app everyone uses to manage agents at work"，是观察 Agent 产品化（如何在工作场景中被组织、调度和治理）的一手样本。13.5K forks 表明生态活跃度极高。[待内化]
+
+**记忆系统矩阵扩展**
+- [MemPrivacy](https://github.com/MemTensor/MemPrivacy)（112★）是边缘-云端协同的隐私保护个性化记忆管理框架，支持 mem0/langmem 对比和 Qwen3 隐私检测。将记忆系统选型矩阵从「mempalace vs gbrain vs MEMORY.md」扩展为「记忆能力 + 隐私保护」二维决策。[已内化]
+
+**Meta-Skill：让 Agent 给 Agent 下达任务**
+- [qiaomu-goal-meta-skill](https://github.com/joeseesun/qiaomu-goal-meta-skill)（739★）将模糊 Codex 任务转为六维结构化 `/goal` 命令（outcome/verification/constraints/boundaries/iteration policy/completion evidence）。与 ouroboros 的 "Stop prompting. Start specifying." 理念高度共鸣——都是将"人类模糊意图"编译为"Agent 可执行规范"的翻译层。[已内化]
+
+**内容管线扩展**
+- [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)（94.8K★）是 AI 短视频生成的工业级方案，MoviePy + ChatGPT 一键生成高清视频。与 remotion（程序化视频渲染）、Pixelle-Video（AI 短视频引擎）共同构成内容资产管线中「文本 → 视频」的完整解决方案矩阵。[已内化]
+- [stop-slop](https://github.com/hardikpandya/stop-slop)（13.1K★）专门去除 AI 写作痕迹（"removing AI tells from prose"），纯 Skill 文件形态。与 khazix-writer（风格化长文写作）互补——前者做减法（去 AI 味），后者做加法（注入个人风格）。对「AI 生成 → 分发」链路中的质量打磨环节有直接实用价值。[已内化]
+
+**GUI Agent 三极成形**
+- [page-agent](https://github.com/alibaba/page-agent)（20.9K★，阿里巴巴）是 JavaScript 页内 GUI Agent——直接在网页中运行而非通过 CDP 外部驱动。与 gelab-zero（phone use）、Mano-P（桌面 GUI）共同构成端侧 GUI Agent 的"移动端-桌面-Web"三极覆盖。[已内化]
+
+**金融工具矩阵扩展**
+- [quant-mind](https://github.com/LLMQuant/quant-mind)（1.6K★）将 LLM pipeline/workflow 范式应用于量化金融知识提取与检索。与 daisy-financial-research（股票研究 Skill 执行）互补——quant-mind 侧重知识库构建，daisy 侧重研究执行。[已内化]
+
+**全栈脚手架与硬件信号**
+- [Better-Fullstack](https://github.com/Marve10s/Better-Fullstack)（677★）是可视化全栈应用脚手架，支持 TS/Rust/Python/Go/Java 五种语言栈 + 可视化 Builder + CLI。是 Agent 编程场景中"项目冷启动"的候选模板引擎。[待内化]
+- [RuView](https://github.com/ruvnet/RuView)（76K★）将商用 WiFi 信号转为实时空间感知/生命体征监测/存在检测——零视频像素的环境计算。虽然与本 PKM 核心领域较远，但展示了"信号 → 感知 → AI 理解"的端到端边缘计算范式。[待内化]
+
+### Reusable patterns
+- **GUI Agent 三极模型**：桌面（Mano-P）+ 移动端（gelab-zero）+ Web（page-agent）。三者技术路径各异（纯视觉 vs CDP vs 页内注入），但共同指向"让 Agent 像人一样操作所有界面"的终极目标。选型时优先看技术路径与目标场景的匹配度。[已内化]
+- **Meta-Skill 模式**：qiaomu-goal-meta-skill 展示了"元技能"概念——不是执行任务的 Skill，而是帮助生成执行规范的 Skill。这种 2 层架构（Meta-Skill → 执行 Skill）可复用于本 PKM 的 Skills 体系设计。[已内化]
+- **内容生产双工序**：AI 生成（MoneyPrinterTurbo / remotion）→ AI 润色（stop-slop / khazix-writer）。两段分离的设计比"一步到位的完美输出"更可控、更易迭代。[已内化]
+- **12-Factor Agents 作为 Agent 系统评审清单**：可复用于评审本 PKM 的 Agent Skills 架构、github-kb 管线设计，甚至 wiki 状态机本身。[已内化]
