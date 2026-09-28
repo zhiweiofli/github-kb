@@ -16,3 +16,4 @@
 | [vercel-labs/skills](vercel-labs--skills.md) | 一个 npm 命令行工具（npx skills），用于发现、安装、使用、更新和移除遵循 SKILL.md 规范的 AI 编码代理技能（Agent Skills），并将其分发到多种编码代理的技能目录。 | agent skills, SKILL.md, coding agent CLI, skills installer, AI 编码代理技能分发, npx skills |
 | [vernesong/OpenClash](vernesong--openclash.md) | 面向 OpenWrt 路由器的 Mihomo(Clash) 图形化客户端插件，用 LuCI 界面管理多协议代理与规则分流。 | OpenWrt, LuCI, Clash, Mihomo, 透明代理, 规则分流 |
 | [yaojingang/yao-meta-skill](yaojingang--yao-meta-skill.md) | 把重复性工作流转化为可跨平台打包、评估与治理的复用型 agent skill 包，并提供技能生命周期（IR、编译器、评估、发布门禁、运营）工具链。 | agent skill 工程化, skill 打包与跨平台适配, skill 评估与触发测试, skill 生命周期治理, Skill IR 中间表示, 治理门禁与发布证据 |
+| [YILS-LIN/short-video-factory](yils-lin--short-video-factory.md) | 一个 AGPL-3.0 的开源跨平台桌面端工具，宣称可用提示词与视频素材自动完成短视频的文案生成、语音合成、剪辑与字幕添加。 | 短视频自动剪辑, AI 文案生成, 文本转语音, EdgeTTS, 桌面端跨平台应用, 批量视频生成 |
