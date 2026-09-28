@@ -4,6 +4,7 @@
 
 | 项目 | 用途 | 关键词 |
 |---|---|---|
+| [AgriciDaniel/claude-obsidian](agricidaniel--claude-obsidian.md) | 面向 Obsidian + Claude Code/Agent Skills 的本地优先知识库系统，将来源材料转为带来源引用的 Markdown 笔记并可查询维护，README 定位为 AI 笔记与开放知识管理方案。 | Obsidian, Claude Code, Agent Skills, personal knowledge management, PKM, local-first Markdown, provenance |
 | [alchaincyf/karpathy-skill](alchaincyf--karpathy-skill.md) | 把 Andrej Karpathy 的公开言论蒸馏成可安装到 AI agent runtime 的 Agent Skill（思维框架+表达风格），用于让 agent 以其视角回答 AI、编程、学习类问题。 | Agent Skills, SKILL.md, Claude Code skills, prompt persona, Karpathy, 人物蒸馏 |
 | [andrewyng/context-hub](andrewyng--context-hub.md) | 为编码智能体提供可检索、带版本和语言变体的 markdown 文档与技能目录，减少 API 幻觉并在会话间保留注释。 | coding-agent, API documentation, agent skills, CLI, npm, markdown docs |
 | [facebook/astryx](facebook--astryx.md) | Meta 开源的设计系统，提供 150+ 可访问 React 组件、主题、模板与 CLI，主打无样式锁定、可定制且面向人类与 AI 协作构建。 | design system, React 19, StyleX, component library, accessibility, theming |
