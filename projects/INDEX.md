@@ -5,6 +5,7 @@
 | 项目 | 用途 | 关键词 |
 |---|---|---|
 | [AgriciDaniel/claude-obsidian](agricidaniel--claude-obsidian.md) | 面向 Obsidian + Claude Code/Agent Skills 的本地优先知识库系统，将来源材料转为带来源引用的 Markdown 笔记并可查询维护，README 定位为 AI 笔记与开放知识管理方案。 | Obsidian, Claude Code, Agent Skills, personal knowledge management, PKM, local-first Markdown, provenance |
+| [ahujasid/mcp-for-blender](ahujasid--mcp-for-blender.md) | 通过 MCP 协议把任意 LLM 客户端与 Blender 3D 连接起来，让 AI 以提示词方式驱动建模、材质与场景操作（README 宣称）。 | MCP, Blender, LLM 3D 建模, Blender Python 脚本, Poly Haven, AI 生成 3D 模型 |
 | [alchaincyf/karpathy-skill](alchaincyf--karpathy-skill.md) | 把 Andrej Karpathy 的公开言论蒸馏成可安装到 AI agent runtime 的 Agent Skill（思维框架+表达风格），用于让 agent 以其视角回答 AI、编程、学习类问题。 | Agent Skills, SKILL.md, Claude Code skills, prompt persona, Karpathy, 人物蒸馏 |
 | [andrewyng/context-hub](andrewyng--context-hub.md) | 为编码智能体提供可检索、带版本和语言变体的 markdown 文档与技能目录，减少 API 幻觉并在会话间保留注释。 | coding-agent, API documentation, agent skills, CLI, npm, markdown docs |
 | [apache/maka](apache--maka.md) | Apache Maka（孵化中）是一个本地优先的 agent 工作区，把每次运行的模型消息、工具调用、权限决策和终止都记录为只追加的 RuntimeEvent 日志，并以该日志作为运行、UI 与崩溃恢复的事实来源。 | agent harness, agent workspace, runtime event log, local-first agent, agent evaluation, Apache Incubator |
