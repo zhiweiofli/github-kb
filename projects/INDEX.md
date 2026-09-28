@@ -14,6 +14,7 @@
 | [omnigent-ai/omnigent](omnigent-ai--omnigent.md) | 面向多种编码型 AI Agent 的统一编排层（meta-harness），在不重写 agent 的前提下切换/组合 Claude Code、Codex、Cursor、OpenCode、Hermes、Pi 及自写 agent，并叠加策略、沙箱与多端实时协作。 | AI agent 编排, meta-harness, Claude Code, Codex, Cursor, agent 沙箱与策略治理 |
 | [tt-a1i/archify](tt-a1i--archify.md) | 一个面向 AI Agent 的 Skill，把描述或仓库分析结果转成自带交互、可校验、可导出图片的自包含 HTML 架构/工作流/时序/数据流/生命周期图。 | AI Agent Skill, 架构图生成, 交互式 HTML 图, 系统架构可视化, 时序图/工作流图, MIT 开源 |
 | [tw93/Pake](tw93--pake.md) | 把任意网页用一条命令打包成 macOS/Windows/Linux 桌面应用。 | Tauri, Rust, 网页转桌面应用, 跨平台打包, pake-cli, GitHub Actions 构建 |
+| [tw93/Waza](tw93--waza.md) | 面向 AI 编码代理的一组通用工程习惯技能包，把思考、UI、审查、调试、写作、研究、阅读与代理健康检查固化为可安装的 skill 触发指令。 | AI coding agent skills, Claude Code skills, Codex plugin, agent workflow, engineering habits, prompt chaining |
 | [vercel-labs/skills](vercel-labs--skills.md) | 一个 npm 命令行工具（npx skills），用于发现、安装、使用、更新和移除遵循 SKILL.md 规范的 AI 编码代理技能（Agent Skills），并将其分发到多种编码代理的技能目录。 | agent skills, SKILL.md, coding agent CLI, skills installer, AI 编码代理技能分发, npx skills |
 | [vernesong/OpenClash](vernesong--openclash.md) | 面向 OpenWrt 路由器的 Mihomo(Clash) 图形化客户端插件，用 LuCI 界面管理多协议代理与规则分流。 | OpenWrt, LuCI, Clash, Mihomo, 透明代理, 规则分流 |
 | [yaojingang/yao-meta-skill](yaojingang--yao-meta-skill.md) | 把重复性工作流转化为可跨平台打包、评估与治理的复用型 agent skill 包，并提供技能生命周期（IR、编译器、评估、发布门禁、运营）工具链。 | agent skill 工程化, skill 打包与跨平台适配, skill 评估与触发测试, skill 生命周期治理, Skill IR 中间表示, 治理门禁与发布证据 |
