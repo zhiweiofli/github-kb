@@ -8,6 +8,7 @@
 | [andrewyng/context-hub](andrewyng--context-hub.md) | 为编码智能体提供可检索、带版本和语言变体的 markdown 文档与技能目录，减少 API 幻觉并在会话间保留注释。 | coding-agent, API documentation, agent skills, CLI, npm, markdown docs |
 | [facebook/astryx](facebook--astryx.md) | Meta 开源的设计系统，提供 150+ 可访问 React 组件、主题、模板与 CLI，主打无样式锁定、可定制且面向人类与 AI 协作构建。 | design system, React 19, StyleX, component library, accessibility, theming |
 | [headroomlabs-ai/headroom](headroomlabs-ai--headroom.md) | 面向 AI agent 的本地上下文压缩层，在提示词送进 LLM 前压缩工具输出、日志、RAG 片段、文件与会话历史，并以库、代理或 MCP server 形式接入。 | LLM context compression, agent token optimization, MCP server, LLM proxy, RAG chunk compression, reversible compression CCR |
+| [heyjunpenn/awesome-jev](heyjunpenn--awesome-jev.md) | 一个社区维护的、收录约 944 个基于 Jev（TypeSafe AI 的 System One 类型化决策模型）的开源项目目录，按 11 个类别整理并附项目描述。 | Jev, TypeSafe AI, System One, typed decisions, awesome list, open-source catalog |
 | [JimLiu/baoyu-design](jimliu--baoyu-design.md) | 一个把 claude.ai/design 的设计流程打包成本地 Agent Skill 的开源项目，让 Cursor、Claude Code、Codex 等文件型编码代理在本地生成自包含 HTML 的 UI 稿、原型、线框和幻灯片。 | Agent Skill, Claude Design, 本地 UI 稿生成, HTML 原型, 设计系统, Figma 导入, PPTX 导出, Cursor, Claude Code, Codex |
 | [tt-a1i/archify](tt-a1i--archify.md) | 一个面向 AI Agent 的 Skill，把描述或仓库分析结果转成自带交互、可校验、可导出图片的自包含 HTML 架构/工作流/时序/数据流/生命周期图。 | AI Agent Skill, 架构图生成, 交互式 HTML 图, 系统架构可视化, 时序图/工作流图, MIT 开源 |
 | [tw93/Pake](tw93--pake.md) | 把任意网页用一条命令打包成 macOS/Windows/Linux 桌面应用。 | Tauri, Rust, 网页转桌面应用, 跨平台打包, pake-cli, GitHub Actions 构建 |
