@@ -1,6 +1,8 @@
 # DeepSeek Actions 接入 — 2026-09-22
 
-状态：本地实现完成，未上线，未完成真实模型验收。
+> 2026-10-02 只读状态覆盖：远端 main 为 `499faa3568646fbd4fcb819e685f6bf48e0dffed`，最近三次 `index-project.yml` 运行（2026-09-28）均 completed/success：[36443451601](https://github.com/zhiweiofli/github-kb/actions/runs/36443451601)、[36443430024](https://github.com/zhiweiofli/github-kb/actions/runs/36443430024)、[36443397429](https://github.com/zhiweiofli/github-kb/actions/runs/36443397429)。下方“未上线/未执行”是 9 月 22 日历史状态，不代表今天；本轮仅核对运行元数据，未重读全部模型响应、逐卡质量或重复提交路径。未调用模型、修改 Secret、重跑 Action 或发布本轮文档。
+
+历史状态（2026-09-22）：本地实现完成，未上线，未完成真实模型验收。
 
 目标：仓库所有者提 Issue 后，公开项目 README 与元数据经 DeepSeek 分析，生成结构化 Markdown 卡与索引，Git push 成功后关闭 Issue 并回贴链接。
 

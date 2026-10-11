@@ -1,5 +1,7 @@
 # ADR-001: GitHub Knowledge Base Architecture
 
+> 2026-10-02 导航说明：本文保留 2026-01-29 已接受的本地文件系统初始设计，不是项目全部现行入口。后续所有者 Issue / Actions / DeepSeek 项目卡流程见 [README](../README.md)与[接入记录](deepseek-action-acceptance.md)；没有改写本文原决策为新增云端能力的批准。
+
 **Status**: Accepted
 **Date**: 2026-01-29
 **Decision Makers**: User + AIE Architect
